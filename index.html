@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,target-densitydpi=device-dpi">
+
+<meta name="copyright" content="">
+<meta name="keywords" content="">   
+<meta name="description" content="">
+<title>jquery.dlTableSet.js</title>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script> 
+<script type="text/javascript" src="js/jquery.dlTableSet.js"></script> 
+
+<script>
+$(function(){
+	$('dl.table').dlTableSet();
+});
+</script>
+
+<style>
+dl,dt,dd {
+	margin: 0;
+	padding: 0;
+}
+dl.table {
+	margin: 20px;
+	border: 1px solid #999;
+	border-top: none;
+}
+
+dl.table > * {
+	line-height: 1.5;
+	padding: 0.3em 10px;
+}
+
+dl.table dt {
+	margin-right: -200px;
+	border-top: 1px solid #999;
+	width: 200px;
+	float: left;
+	clear: both;
+}
+dl.table dd {
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	margin-left: 220px;
+}
+</style>
+</head>
+
+<body>
+<h1>jquery.dlTableSet.js</h1>
+
+<dl class="table">
+	<dt>dt</dt>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dt>dt</dt>
+	<dd>dd</dd>
+	<dt>dt<br>dt</dt>
+	<dd>dd</dd>
+	<dt>dt<br>dt<br>dt<br>dt</dt>
+	<dd>dd</dd>
+	<dd>dd<br>dd</dd>
+</dl>
+<dl class="table">
+	<dt>dt</dt>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dt>dt</dt>
+	<dd>dd</dd>
+	<dt>dt<br>dt</dt>
+	<dd>dd</dd>
+	<dt>dt<br>dt<br>dt<br>dt<br>dt<br>dt<br>dt</dt>
+	<dd>ddテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</dd>
+	<dd>dd</dd>
+	<dd>dd</dd>
+	<dt>dt<br>dt<br>dt<br>dt<br>dt<br>dt<br>dt<br>dt<br>dt<br>dt<br>dt</dt>
+	<dd>ddテストテストテストテストテストテストテストテストストテスト</dd>
+	<dd>dd</dd>
+	<dd>dd</dd>
+</dl>
+</body>
+</html>
